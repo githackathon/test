@@ -1,3 +1,4 @@
+#include <unistd.h>
 #include <iostream>
 using namespace std;
 
@@ -15,6 +16,14 @@ public:
 	MyType(T_Type eSetType) : m_eType(eSetType) {};
 	T_Type getType() { return m_eType; };
 };
+
+void loop(int times) {
+    int i;
+    for (i=0; i<times; i++) {
+        printf("delay %d\r\n", i);
+        sleep(1);
+    }
+}
 
 int main()
 {	
@@ -37,7 +46,9 @@ int main()
  array[3] = 'z';
  
  // Push this change
- cout << "Push this change" << end;
+ cout << "Push this change" << endl;
+ 
+ loop(5);
  
  return 0;
 }

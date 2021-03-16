@@ -1,5 +1,8 @@
 #include <unistd.h>
 #include <iostream>
+#include <chrono>
+#include <thread>
+
 using namespace std;
 
 class MyType {
@@ -27,7 +30,7 @@ void loop(int times) {
 
 int main()
 {	
- int i = 0xFF43;
+ int i = 0xFF43
  char c;
  
  cout << "\nKlocwork_Test!\n" << endl;
@@ -44,6 +47,9 @@ int main()
  // Buffer overflow - Just to check Klocwork desktop analysis is working
  char array[3];
  array[3] = 'z';
+ 
+ using namespace std::chrono_literals;
+ std::this_thread::sleep_for(10s);
  
  // Push this change
  cout << "Push this change" << endl;

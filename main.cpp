@@ -33,7 +33,7 @@ int main()
  int i = 0xFF43;
  char c;
  
- cout << "\nKlocwork_Test!\n" << endl;
+ cout << "\nCodePipeline Test\n" << endl;
   
  // Trying to detect this
  c = i; // 0x43 ascii char -> 'C'

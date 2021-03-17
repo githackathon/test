@@ -30,7 +30,7 @@ void loop(int times) {
 
 int main()
 {	
- int i = 0xFF43
+ int i = 0xFF43;
  char c;
  
  cout << "\nKlocwork_Test!\n" << endl;

@@ -31,7 +31,7 @@ void loop(int times) {
 int main()
 {	
  int i = 0xFF43;
- char c;
+ char c = 'e';
  
  cout << "\nCodePipeline Test \n" << endl;
   
